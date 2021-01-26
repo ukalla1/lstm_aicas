@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v,1611557373,verilog,,,,Top_tb,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/new/softMax_v2_tb.v,1611520136,verilog,,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,softMax_v2_tb,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v,1611263928,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v,,MAC,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v,1611263928,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v,,accumulator,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v,1611554603,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v,,bram_memory,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v,1611263928,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v,,hard_sigmoid,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v,1611263928,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v,,hard_tanh,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v,1611280652,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v,,ifog,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v,1611555730,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,lstm_top_tmp,,,../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,1611547395,verilog,,,,,,,,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v,1611547768,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,softMax_v2,,,../../../../lstm_ar.srcs/sources_1/new,,,,,

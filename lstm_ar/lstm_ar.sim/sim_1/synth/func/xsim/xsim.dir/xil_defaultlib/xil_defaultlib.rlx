@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.sim/sim_1/synth/func/xsim/Top_tb_func_synth.v,1611538436,verilog,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v,,MAC;MAC_2;accumulator;bram_memory;bram_memory__parameterized0;bram_memory__parameterized1;bram_memory__parameterized2;bram_memory__parameterized3;bram_memory__parameterized3_0;bram_memory__parameterized4;glbl;hard_sigmoid;hard_tanh;hard_tanh_1;ifog;lstm_top_tmp;softMax_v2,,,../../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v,1611536519,verilog,,,,Top_tb,,,../../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/new/softMax_v2_tb.v,1611520136,verilog,,,/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,softMax_v2_tb,,,../../../../../lstm_ar.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/parameters.vh,1611518829,verilog,,,,,,,,,,,,

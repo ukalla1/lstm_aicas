@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="softMax_v2_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="softMax_v2_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000000fs"></ZoomEndTime>
+      <Cursor1Time time="435000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="logic" fp_name="/softMax_v2_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/feature_in">
+      <obj_property name="ElementShortName">feature_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/coef_in">
+      <obj_property name="ElementShortName">coef_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">coef_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/coef_addrs">
+      <obj_property name="ElementShortName">coef_addrs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">coef_addrs[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/feature_addrs">
+      <obj_property name="ElementShortName">feature_addrs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_addrs[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/op_write">
+      <obj_property name="ElementShortName">op_write</obj_property>
+      <obj_property name="ObjectShortName">op_write</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/busy">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/op_addrs">
+      <obj_property name="ElementShortName">op_addrs[6:0]</obj_property>
+      <obj_property name="ObjectShortName">op_addrs[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/data_out">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/mem_in">
+      <obj_property name="ElementShortName">mem_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/rd">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/Fmem_addrs">
+      <obj_property name="ElementShortName">Fmem_addrs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Fmem_addrs[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/Cmem_addrs">
+      <obj_property name="ElementShortName">Cmem_addrs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Cmem_addrs[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/coef_addrs">
+      <obj_property name="ElementShortName">coef_addrs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">coef_addrs[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/feature_addrs">
+      <obj_property name="ElementShortName">feature_addrs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_addrs[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/data_out_internal">
+      <obj_property name="ElementShortName">data_out_internal[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_internal[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/op_addrs_internal">
+      <obj_property name="ElementShortName">op_addrs_internal[6:0]</obj_property>
+      <obj_property name="ObjectShortName">op_addrs_internal[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/softMax_v2_tb/uut/op_write_internal">
+      <obj_property name="ElementShortName">op_write_internal</obj_property>
+      <obj_property name="ObjectShortName">op_write_internal</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/mac_val">
+      <obj_property name="ElementShortName">mac_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_val[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/prod_val">
+      <obj_property name="ElementShortName">prod_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">prod_val[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/num_labels">
+      <obj_property name="ElementShortName">num_labels[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_labels[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/softMax_v2_tb/uut/num_features">
+      <obj_property name="ElementShortName">num_features[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_features[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

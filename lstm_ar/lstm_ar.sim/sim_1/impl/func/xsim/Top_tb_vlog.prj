@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../lstm_ar.srcs/sources_1/new" \
+"Top_tb_func_impl.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/MAC.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/accumulator.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v" \
+"../../../../../lstm_ar.srcs/sources_1/imports/rtl/ifog.v" \
+"../../../../../lstm_ar.srcs/sources_1/new/lstm_top_tmp.v" \
+"../../../../../lstm_ar.srcs/sources_1/new/softMax_v2.v" \
+"../../../../../lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v" \
+
+# Do not sort compile order
+nosort

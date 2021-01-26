@@ -1,0 +1,63 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.sim/sim_1/impl/timing/xsim/Top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32X1S_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD52
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD53
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD54
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD55
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD56
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD57
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD58
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD59
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD60
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD61
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD62
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD63
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD64
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD65
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD66
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-311] analyzing module MAC_2
+INFO: [VRFC 10-311] analyzing module accumulator
+INFO: [VRFC 10-311] analyzing module bram_memory
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized0
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized1
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized2
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized3
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized3_0
+INFO: [VRFC 10-311] analyzing module bram_memory__parameterized4
+INFO: [VRFC 10-311] analyzing module hard_sigmoid
+INFO: [VRFC 10-311] analyzing module hard_tanh
+INFO: [VRFC 10-311] analyzing module hard_tanh_1
+INFO: [VRFC 10-311] analyzing module ifog
+INFO: [VRFC 10-311] analyzing module lstm_top_tmp
+INFO: [VRFC 10-311] analyzing module softMax_v2
+INFO: [VRFC 10-311] analyzing module softMax_v2__parameterized0
+INFO: [VRFC 10-311] analyzing module softMax_v2__parameterized1
+INFO: [VRFC 10-311] analyzing module top_wrapper
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'MAC' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accumulator
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'accumulator' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_memory
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'bram_memory' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hard_sigmoid
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'hard_sigmoid' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hard_tanh
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'hard_tanh' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifog
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ifog' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lstm_top_tmp
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'lstm_top_tmp' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMax_v2
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'softMax_v2' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_tb

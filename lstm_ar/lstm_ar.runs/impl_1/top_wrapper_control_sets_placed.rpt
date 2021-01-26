@@ -1,0 +1,101 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Jan 25 12:46:33 2021
+| Host         : ukallakuri-Lenovo-YOGA-910-13IKB running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            2 |
+|      5 |            2 |
+|      6 |            1 |
+|      7 |            4 |
+|      8 |            6 |
+|     10 |            1 |
+|     11 |            1 |
+|     12 |            1 |
+|    16+ |           11 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             184 |           85 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             391 |          123 |
+| Yes          | No                    | No                     |              16 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             169 |           63 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                 Enable Signal                |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | top/lstm_module/h_sload                      | top/lstm_module/Wx_rd_address_reg0                  |                1 |              3 |
+|  clk_IBUF_BUFG | top/lstm_module/hard_tanh_inst_0/E[0]        | top/lstm_module/Wx_rd_address_reg0                  |                1 |              3 |
+|  clk_IBUF_BUFG | top/lstm_module/x_v_count[4]_i_1_n_0         | reset_IBUF                                          |                3 |              5 |
+|  clk_IBUF_BUFG | top/lstm_module/h_h_count[3]_i_1_n_0         | reset_IBUF                                          |                2 |              5 |
+|  clk_IBUF_BUFG |                                              | top/lstm_module/accumulator/accumulate_out_reg[0]_0 |                2 |              6 |
+|  clk_IBUF_BUFG | top/SML2/op_write_internal                   | reset_IBUF                                          |                3 |              7 |
+|  clk_IBUF_BUFG | top/SML1/op_write_internal                   | reset_IBUF                                          |                3 |              7 |
+|  clk_IBUF_BUFG | top/SML0/op_write_internal                   | reset_IBUF                                          |                4 |              7 |
+|  clk_IBUF_BUFG | top/lstm_module/x_h_count[5]_i_1_n_0         | reset_IBUF                                          |                4 |              7 |
+|  clk_IBUF_BUFG | top/lstm_module/tanh_activation_en_1         |                                                     |                2 |              8 |
+|  clk_IBUF_BUFG | top/lstm_module/accumulator_en               | top/lstm_module/accumulator_reset                   |                2 |              8 |
+|  clk_IBUF_BUFG | top/lstm_module/h_sload                      |                                                     |                2 |              8 |
+|  clk_IBUF_BUFG | top/lstm_module/c_t_read                     |                                                     |                2 |              8 |
+|  clk_IBUF_BUFG | top/lstm_module/c_t_compute                  | reset_IBUF                                          |                2 |              8 |
+|  clk_IBUF_BUFG | top/lstm_module/hard_tanh_inst_1/cen_3       | reset_IBUF                                          |                4 |              8 |
+|  clk_IBUF_BUFG |                                              | top/lstm_module/Wx_rd_address_reg0                  |                4 |             10 |
+|  clk_IBUF_BUFG | top/lstm_module/Wx_read                      | top/lstm_module/Wx_rd_address_reg0                  |                3 |             11 |
+|  clk_IBUF_BUFG | top/lstm_module/ifog_currentState[2]_i_1_n_0 | reset_IBUF                                          |                6 |             12 |
+|  clk_IBUF_BUFG |                                              | top/SML0/num_features[31]_i_1_n_0                   |                5 |             23 |
+|  clk_IBUF_BUFG | top/lstm_module/h_ce_2                       | top/lstm_module/h_mac_clear                         |                9 |             25 |
+|  clk_IBUF_BUFG | top/lstm_module/x_ce_2                       | top/lstm_module/x_mac_clear                         |                7 |             25 |
+|  clk_IBUF_BUFG |                                              | top/SML1/num_features[31]_i_1__0_n_0                |                4 |             25 |
+|  clk_IBUF_BUFG |                                              | top/SML0/num_labels[31]_i_1_n_0                     |                6 |             25 |
+|  clk_IBUF_BUFG |                                              | top/SML2/num_features[31]_i_1__1_n_0                |                5 |             27 |
+|  clk_IBUF_BUFG |                                              | top/SML1/num_labels[31]_i_1__0_n_0                  |                6 |             27 |
+|  clk_IBUF_BUFG | top/lstm_module/hard_sigmoid_inst/E[0]       | reset_IBUF                                          |                9 |             28 |
+|  clk_IBUF_BUFG |                                              | top/SML2/num_labels[31]_i_1__1_n_0                  |                7 |             28 |
+|  clk_IBUF_BUFG |                                              |                                                     |               87 |            192 |
+|  clk_IBUF_BUFG |                                              | reset_IBUF                                          |               84 |            220 |
++----------------+----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

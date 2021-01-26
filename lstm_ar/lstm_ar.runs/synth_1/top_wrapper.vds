@@ -1,0 +1,928 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan 25 12:44:50 2021
+# Process ID: 19208
+# Current directory: /home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.runs/synth_1
+# Command line: vivado -log top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+# Log file: /home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.runs/synth_1/top_wrapper.vds
+# Journal file: /home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace
+Command: synth_design -top top_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19224 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1325.219 ; gain = 8.910 ; free physical = 705 ; free virtual = 4367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_wrapper' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/top_wrapper.v:24]
+	Parameter XTMem bound to: 2'b00 
+	Parameter HTMem bound to: 2'b01 
+	Parameter SMWMem bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'lstm_top_tmp' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:24]
+	Parameter idle bound to: 3'b000 
+	Parameter begin_ops bound to: 3'b001 
+	Parameter mem_read bound to: 3'b010 
+	Parameter op_wr bound to: 3'b011 
+	Parameter start_SM bound to: 3'b100 
+	Parameter SM_idle bound to: 3'b101 
+	Parameter rd_op bound to: 3'b110 
+	Parameter stop bound to: 3'b111 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:46]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:48]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:52]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:53]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:60]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:63]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 12 - type: integer 
+	Parameter memFile bound to: feature.mem - type: string 
+	Parameter RAM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'feature.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory' (1#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory__parameterized0' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 9 - type: integer 
+	Parameter memFile bound to: h_t.mem - type: string 
+	Parameter RAM_DEPTH bound to: 512 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'h_t.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory__parameterized0' (1#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ifog' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:25]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter input_length bound to: 40 - type: integer 
+	Parameter output_length bound to: 8 - type: integer 
+	Parameter timestep bound to: 64 - type: integer 
+	Parameter PE bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:51]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:52]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:54]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:55]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:58]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:60]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:61]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:63]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:65]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:67]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:72]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:76]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:77]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:78]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:80]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:82]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:84]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:88]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:89]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:90]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:91]
+INFO: [Synth 8-6157] synthesizing module 'MAC' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:22]
+	Parameter dataWidth_in bound to: 8 - type: integer 
+	Parameter dataWidth_out bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:40]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:41]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'MAC' (2#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/MAC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'accumulator' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter ACC_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'accumulator' (3#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/accumulator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hard_sigmoid' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:30]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:32]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'hard_sigmoid' (4#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_sigmoid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hard_tanh' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:30]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:33]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'hard_tanh' (5#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/hard_tanh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory__parameterized1' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 11 - type: integer 
+	Parameter memFile bound to: wx_weight.mem - type: string 
+	Parameter RAM_DEPTH bound to: 2048 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'wx_weight.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory__parameterized1' (5#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory__parameterized2' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 9 - type: integer 
+	Parameter memFile bound to: wh_weight.mem - type: string 
+	Parameter RAM_DEPTH bound to: 512 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'wh_weight.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory__parameterized2' (5#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory__parameterized3' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 3 - type: integer 
+	Parameter memFile bound to: bias.mem - type: string 
+	Parameter RAM_DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'bias.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory__parameterized3' (5#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'addr' does not match port width (3) of module 'bram_memory__parameterized3' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:195]
+WARNING: [Synth 8-689] width (4) of port connection 'addr' does not match port width (3) of module 'bram_memory__parameterized3' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:208]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:257]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:322]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:442]
+INFO: [Synth 8-6155] done synthesizing module 'ifog' (6#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:25]
+INFO: [Synth 8-6157] synthesizing module 'bram_memory__parameterized4' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+	Parameter dataWidth bound to: 8 - type: integer 
+	Parameter addrW bound to: 16 - type: integer 
+	Parameter memFile bound to: filter_map.mem - type: string 
+	Parameter RAM_DEPTH bound to: 65536 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'filter_map.mem' is read successfully [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bram_memory__parameterized4' (6#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/bram_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'softMax_v2' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+	Parameter NUM_LABELS bound to: 80 - type: integer 
+	Parameter NUM_FEATURES bound to: 512 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter state1 bound to: 2'b01 
+	Parameter state2 bound to: 2'b10 
+	Parameter state3 bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:42]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:43]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:44]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:46]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:48]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:50]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:51]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:53]
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'softMax_v2' (7#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+INFO: [Synth 8-6157] synthesizing module 'softMax_v2__parameterized0' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+	Parameter NUM_LABELS bound to: 32 - type: integer 
+	Parameter NUM_FEATURES bound to: 80 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter state1 bound to: 2'b01 
+	Parameter state2 bound to: 2'b10 
+	Parameter state3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'softMax_v2__parameterized0' (7#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+INFO: [Synth 8-6157] synthesizing module 'softMax_v2__parameterized1' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+	Parameter NUM_LABELS bound to: 13 - type: integer 
+	Parameter NUM_FEATURES bound to: 32 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter state1 bound to: 2'b01 
+	Parameter state2 bound to: 2'b10 
+	Parameter state3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'softMax_v2__parameterized1' (7#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/softMax_v2.v:25]
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'lstm_top_tmp' (8#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/lstm_top_tmp.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'top_wrapper' (9#1) [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/new/top_wrapper.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1421.969 ; gain = 105.660 ; free physical = 676 ; free virtual = 4341
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1421.969 ; gain = 105.660 ; free physical = 682 ; free virtual = 4348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1421.969 ; gain = 105.660 ; free physical = 682 ; free virtual = 4348
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.758 ; gain = 0.000 ; free physical = 392 ; free virtual = 4076
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.758 ; gain = 0.000 ; free physical = 391 ; free virtual = 4075
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1741.758 ; gain = 0.000 ; free physical = 391 ; free virtual = 4075
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1741.758 ; gain = 425.449 ; free physical = 478 ; free virtual = 4162
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1741.758 ; gain = 425.449 ; free physical = 478 ; free virtual = 4162
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1741.758 ; gain = 425.449 ; free physical = 479 ; free virtual = 4163
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "h_ce" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x_ce" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Wx_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Wx_read" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x_v_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "x_currentState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "x_currentState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x_mac_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "x_sload" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "x_sload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Wh_read" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Wh_read" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_currentState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_currentState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_currentState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_mac_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_sload" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_sload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "busy0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "busy0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "busy0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1741.758 ; gain = 425.449 ; free physical = 467 ; free virtual = 4154
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 5     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 52    
++---RAMs : 
+	             512K Bit         RAMs := 1     
+	              32K Bit         RAMs := 1     
+	              16K Bit         RAMs := 1     
+	               4K Bit         RAMs := 2     
+	               64 Bit         RAMs := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 8     
+	   8 Input     32 Bit        Muxes := 5     
+	   4 Input     17 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 9     
+	   8 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 7     
+	   4 Input      9 Bit        Muxes := 4     
+	   8 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 21    
+	   6 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   4 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 3     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 49    
+	   4 Input      1 Bit        Muxes := 23    
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_wrapper 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 6     
+Module bram_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module bram_memory__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module MAC 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module accumulator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module hard_sigmoid 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module hard_tanh 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module bram_memory__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module bram_memory__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module bram_memory__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               64 Bit         RAMs := 1     
+Module ifog 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   4 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 6     
+Module bram_memory__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	             512K Bit         RAMs := 1     
+Module softMax_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module softMax_v2__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module softMax_v2__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module lstm_top_tmp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x_currentState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "h_currentState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+DSP Report: Generating DSP XTM_addrs4, operation Mode is: C+A*(B:0x28).
+DSP Report: operator XTM_addrs4 is absorbed into DSP XTM_addrs4.
+DSP Report: operator XTM_addrs5 is absorbed into DSP XTM_addrs4.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM x_t_memory/r_2p_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM h_t_memory/r_2p_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM Wx_memory/r_2p_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM Wh_memory/r_2p_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM SM_w_mem/r_2p_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_45' (FDS) to 'top/lstm_module/data_out_reg__0__0i_44'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_44' (FDS) to 'top/lstm_module/data_out_reg__0__0i_43'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_43' (FDS) to 'top/lstm_module/data_out_reg__0__0i_41'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_41' (FDS) to 'top/lstm_module/data_out_reg__0__0i_40'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_40' (FDS) to 'top/lstm_module/data_out_reg__0__0i_39'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_39' (FDS) to 'top/lstm_module/data_out_reg__0__0i_37'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__0i_37' (FDS) to 'top/lstm_module/data_out_reg__0__0i_36'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0i_22' (FDS) to 'top/lstm_module/data_out_reg__0i_20'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0i_20' (FDS) to 'top/lstm_module/data_out_reg__0i_19'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0i_19' (FDS) to 'top/lstm_module/data_out_reg__0i_17'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0i_17' (FDS) to 'top/lstm_module/data_out_reg__0i_16'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0i_15' (FDS) to 'top/lstm_module/data_out_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_62' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_60' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_59' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_58' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_57' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_56' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+INFO: [Synth 8-3886] merging instance 'top/lstm_module/data_out_reg__0__1i_55' (FDS) to 'top/lstm_module/data_out_reg__0__1i_54'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1741.758 ; gain = 425.449 ; free physical = 362 ; free virtual = 4086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram_memory:                 | r_2p_reg   | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|bram_memory__parameterized0: | r_2p_reg   | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized1: | r_2p_reg   | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized2: | r_2p_reg   | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized4: | r_2p_reg   | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+----------------------+-----------+----------------------+----------------+
+|Module Name     | RTL Object           | Inference | Size (Depth x Width) | Primitives     | 
++----------------+----------------------+-----------+----------------------+----------------+
+|top/lstm_module | c_t_memory/r_2p_reg  | Implied   | 8 x 8                | RAM16X1S x 8   | 
+|top/lstm_module | bias_memory/r_2p_reg | Implied   | 8 x 8                | RAM16X1S x 8   | 
++----------------+----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lstm_top_tmp | C+A*(B:0x28) | 12     | 6      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance top/i_4/x_t_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_5/h_t_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/lstm_module/i_63/Wx_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/lstm_module/i_64/Wh_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/i_8/SM_w_mem/r_2p_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1759.758 ; gain = 443.449 ; free physical = 219 ; free virtual = 3942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1786.789 ; gain = 470.480 ; free physical = 206 ; free virtual = 3929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram_memory:                 | r_2p_reg   | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|bram_memory__parameterized0: | r_2p_reg   | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized1: | r_2p_reg   | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized2: | r_2p_reg   | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|bram_memory__parameterized4: | r_2p_reg   | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++-----------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++----------------+----------------------+-----------+----------------------+----------------+
+|Module Name     | RTL Object           | Inference | Size (Depth x Width) | Primitives     | 
++----------------+----------------------+-----------+----------------------+----------------+
+|top/lstm_module | c_t_memory/r_2p_reg  | Implied   | 8 x 8                | RAM16X1S x 8   | 
+|top/lstm_module | bias_memory/r_2p_reg | Implied   | 8 x 8                | RAM16X1S x 8   | 
++----------------+----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance top/x_t_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/h_t_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/lstm_module/Wx_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/lstm_module/Wh_memory/r_2p_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance top/SM_w_mem/r_2p_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 213 ; free virtual = 3936
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net coef_mem_wr is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |CARRY4      |   129|
+|3     |DSP48E1     |     1|
+|4     |LUT1        |    12|
+|5     |LUT2        |   328|
+|6     |LUT3        |   108|
+|7     |LUT4        |   307|
+|8     |LUT5        |   157|
+|9     |LUT6        |   527|
+|10    |RAM16X1S    |    16|
+|11    |RAMB18E1    |     1|
+|12    |RAMB18E1_1  |     1|
+|13    |RAMB18E1_2  |     1|
+|14    |RAMB36E1    |     1|
+|15    |RAMB36E1_1  |     1|
+|16    |RAMB36E1_10 |     1|
+|17    |RAMB36E1_11 |     1|
+|18    |RAMB36E1_12 |     1|
+|19    |RAMB36E1_13 |     1|
+|20    |RAMB36E1_14 |     1|
+|21    |RAMB36E1_15 |     1|
+|22    |RAMB36E1_16 |     1|
+|23    |RAMB36E1_2  |     1|
+|24    |RAMB36E1_3  |     1|
+|25    |RAMB36E1_4  |     1|
+|26    |RAMB36E1_5  |     1|
+|27    |RAMB36E1_6  |     1|
+|28    |RAMB36E1_7  |     1|
+|29    |RAMB36E1_8  |     1|
+|30    |RAMB36E1_9  |     1|
+|31    |FDRE        |   862|
+|32    |FDSE        |    11|
+|33    |IBUF        |    31|
+|34    |OBUF        |     9|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------------+------------------------------+------+
+|      |Instance                |Module                        |Cells |
++------+------------------------+------------------------------+------+
+|1     |top                     |                              |  2519|
+|2     |  top                   |lstm_top_tmp                  |  2453|
+|3     |    SML0                |softMax_v2                    |   312|
+|4     |    SML1                |softMax_v2__parameterized0    |   322|
+|5     |    SML2                |softMax_v2__parameterized1    |   287|
+|6     |    SM_w_mem            |bram_memory__parameterized4   |   170|
+|7     |    h_t_memory          |bram_memory__parameterized0   |   126|
+|8     |    lstm_module         |ifog                          |   860|
+|9     |      Wh_memory         |bram_memory__parameterized2   |     1|
+|10    |      Wx_memory         |bram_memory__parameterized1   |     1|
+|11    |      accumulator       |accumulator                   |    34|
+|12    |      bias_memory       |bram_memory__parameterized3   |    16|
+|13    |      c_t_memory        |bram_memory__parameterized3_0 |    56|
+|14    |      h_MAC_inst        |MAC                           |    88|
+|15    |      hard_sigmoid_inst |hard_sigmoid                  |    39|
+|16    |      hard_tanh_inst_0  |hard_tanh                     |    45|
+|17    |      hard_tanh_inst_1  |hard_tanh_1                   |    59|
+|18    |      x_MAC_inst        |MAC_2                         |   104|
+|19    |    x_t_memory          |bram_memory                   |    68|
++------+------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1802.805 ; gain = 486.496 ; free physical = 214 ; free virtual = 3937
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1802.805 ; gain = 166.707 ; free physical = 283 ; free virtual = 4006
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1802.812 ; gain = 486.496 ; free physical = 283 ; free virtual = 4006
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1802.812 ; gain = 0.000 ; free physical = 229 ; free virtual = 3952
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1802.812 ; gain = 486.594 ; free physical = 310 ; free virtual = 4033
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1802.812 ; gain = 0.000 ; free physical = 310 ; free virtual = 4033
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.runs/synth_1/top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 25 12:45:34 2021...

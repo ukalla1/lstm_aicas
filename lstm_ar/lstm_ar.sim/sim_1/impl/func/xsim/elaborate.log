@@ -1,0 +1,29 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 77865d381b154ffe8ff2c1ab9b230f13 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Top_tb_func_impl xil_defaultlib.Top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 3 for port 'addr' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:195]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'addr' [/home/ukallakuri/hardware_design/designs/lstm_ar/lstm_ar/lstm_ar.srcs/sources_1/imports/rtl/ifog.v:208]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=12...
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=9,...
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.accumulator
+Compiling module xil_defaultlib.hard_sigmoid(dataWidth=8)
+Compiling module xil_defaultlib.hard_tanh(dataWidth=8)
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=11...
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=9,...
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=3,...
+Compiling module xil_defaultlib.ifog
+Compiling module xil_defaultlib.bram_memory(dataWidth=8,addrW=16...
+Compiling module xil_defaultlib.softMax_v2
+Compiling module xil_defaultlib.softMax_v2(NUM_LABELS=32,NUM_FEA...
+Compiling module xil_defaultlib.softMax_v2(NUM_LABELS=13,NUM_FEA...
+Compiling module xil_defaultlib.lstm_top_tmp
+Compiling module xil_defaultlib.Top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_tb_func_impl

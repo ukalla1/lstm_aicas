@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../lstm_ar.srcs/sources_1/new" \
+"Top_tb_func_synth.v" \
+"../../../../../lstm_ar.srcs/sim_1/imports/rtl/Top_tb.v" \
+
+# Do not sort compile order
+nosort

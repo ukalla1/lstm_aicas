@@ -1,0 +1,7 @@
+Running: xsim.dir/softMax_v2_tb_func_synth/xsimk -simmode gui -wdb softMax_v2_tb_func_synth.wdb -simrunnum 0 -socket 53333
+Design successfully loaded
+Design Loading Memory Usage: 33852 KB (Peak: 33860 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 116108 KB (Peak: 181124 KB)
+Simulation CPU Usage: 50 ms
